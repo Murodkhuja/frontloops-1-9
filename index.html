@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <div class="container">
+  <div class="wrapper">
     <section class="wallets">
       <header class="wallets-top">
         <h2 class="wallets-top-heading">My Wallets</h2>
@@ -17,35 +17,72 @@
           <img src="img/plus.svg" alt="Plus icon" width="24" height="24">
         </button>
       </header>
+      
+      <!-- wallets top -->
+      <ul class="wallets-list">
+        <li class="wallet wallet-visa">
+          <a class="wallet-link" href="a">
+            <div class="wallet-number">**** **** **** 2562</div>
+            <div class="wallet-expiration">Valid thru 12/17</div>
+          </a>
+        </li>
+        <li class="wallet wallet-mastercard wallet-active">
+          <a class="wallet-link" href="a">
+            <div class="wallet-number">**** **** **** 2562</div>
+            <div class="wallet-expiration">Valid thru 12/17</div>
+          </a>
+        </li>
+        <li class="wallet wallet-maestro">
+          <a class="wallet-link" href="a">
+            <div class="wallet-number">**** **** **** 2562</div>
+            <div class="wallet-expiration">Valid thru 12/17</div>
+          </a>
+        </li>
+      </ul>
+    </section>
     
-  <!-- wallets top -->
-  <ul class="wallets-list">
-    <li class="wallet wallet-visa">
-      <a class="wallet-link" href="a">
-        <div class="wallet-number">**** **** **** 2562</div>
-        <div class="wallet-expiration">Valid thru 12/17</div>
-      </a>
-    </li>
-    <li class="wallet wallet-mastercard wallet-active">
-      <a class="wallet-link" href="a">
-        <div class="wallet-number">**** **** **** 2562</div>
-        <div class="wallet-expiration">Valid thru 12/17</div>
-      </a>
-    </li>
-    <li class="wallet wallet-maestro">
-      <a class="wallet-link" href="a">
-        <div class="wallet-number">**** **** **** 2562</div>
-        <div class="wallet-expiration">Valid thru 12/17</div>
-      </a>
-    </li>
-  </ul>
-</section>
-
-  <section class="balance">
-    <header class="balance-top"></header>
-  </section>
-
-   </div> 
+    <section class="balance">
+      <header class="balance-top">
+        <h2 class="balance-top-heading">Current Balance</h2>
+        <div class="balance-value">&dollar;729.<sup>00</sup>
+        </div>
+      </header>
+      
+      <hr class="balance-divider">
+      
+      <ol class="transactions-list">
+        <li class="transaction transaction-expence">
+          <div class="transaction-info">
+            <h3 class="transaction-name">Apple iPhone 7, 128 GB</h3>
+            <p class="transaction-details">Electronics #21312312 - <time class="transaction-date">12 July 2015</time></p>
+          </div>
+          <div class="transaction-value">
+             &dollar;650.<sup>00</sup>
+          </div>
+        </li>
+        <li class="transaction transaction-expence">
+          <div class="transaction-info">
+            <h3 class="transaction-name">Apple iPhone 7, 128 GB</h3>
+            <p class="transaction-details">Electronics #21312312 - <time class="transaction-date">12 July 2015</time></p>
+          </div>
+          <div class="transaction-value">
+             &dollar;650.<sup>00</sup>
+          </div>
+        </li>
+        <li class="transaction transaction-income">
+          <div class="transaction-info">
+            <h3 class="transaction-name">Apple iPhone 7, 128 GB</h3>
+            <p class="transaction-details">Electronics #21312312 - <time class="transaction-date">12 July 2015</time></p>
+          </div>
+          <div class="transaction-value">
+             &dollar;650.<sup>00</sup>
+          </div>
+        </li>
+        
+      </ol>
+      
+    </section>
+  </div> 
   
 </body>
 </html>
